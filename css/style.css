@@ -2,9 +2,10 @@
   box-sizing: border-box;
 }
 
-/* html{
-  font-size: 10px;
-} */
+ html{
+  /* font-size: 10px; */
+  scroll-behavior: smooth;
+} 
 
 body{
   font-family: 'Oswald', sans-serif;
@@ -120,7 +121,8 @@ a{
   animation-name: leftToRight;
   animation-duration: 2.5s;
   animation-timing-function: ease;
-  animation-delay: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 .main-block__title::after{
   content:"";
