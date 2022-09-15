@@ -35,6 +35,9 @@
     body.lock{
         overflow: hidden;
     }
+    body.open{
+        overflow: auto;
+    }
     .menu__burger{
         display: block;
         width: 30px;
@@ -79,6 +82,7 @@
     .menu__burger.active span{
         transform: scale(0);
     }
+    
 
     .header__menu{
         position: fixed;
@@ -94,6 +98,9 @@
     .header__menu.active{
         top: 0;
     }
+    .header__menu.close{
+        left: -300%;
+    }
     .menu__list {
         flex-direction: column;
         gap: 50px;
@@ -102,6 +109,9 @@
     }
     .header__body {
         padding-right: 30px;
+    }
+    .menu__item.active{
+
     }
 }
 /* --------------------669---------------- */
